@@ -1,0 +1,64 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+```{r}
+#sigma square is 0.1
+x=seq(0,1,0.01)
+sigma=sqrt(0.1)
+plot(x,dnorm(x,0,sigma)/dnorm(x,1,sigma),type = 'l',ylab  = "Ratio")
+abline(h=1/2,col='blue',lty=2)
+```
+
+```{r}
+#Ratio at x=0.7
+dnorm(0.7,0,sigma)/dnorm(0.7,1,sigma)
+```
+
+Ratio will be greater than 0.5, when x will be less than 0.7.
+
+```{r}
+#sigma square is 0.5
+x=seq(0,1,0.01)
+sigma1=sqrt(0.5)
+plot(x,dnorm(x,0,sigma1)/dnorm(x,1,sigma1),type = 'l',ylab  = "Ratio")
+abline(h=1/2,col='blue',lty=2)
+```
+```{r}
+#Value at 0.9
+dnorm(0.9,0,sigma1)/dnorm(0.9,1,sigma1)
+```
+
+Ratio will be greater than 0.5, when x will be less than 0.9.
+```{r}
+#sigma square is 1.0
+x=seq(0,2,0.01)
+sigma2=sqrt(1.0)
+plot(x,dnorm(x,0,sigma2)/dnorm(x,1,sigma2),type = 'l',ylab  = "Ratio")
+abline(h=1/2,col='blue',lty=2)
+```
+```{r}
+#value at 1.2
+dnorm(1.2,0,sigma2)/dnorm(1.2,1,sigma2)
+```
+
+Ratio will be greater than 0.5, when x will be less than 1.2.
+
+```{r}
+#sigma square is 5.0
+x=seq(0,5,0.01)
+sigma3=sqrt(5.0)
+plot(x,dnorm(x,0,sigma3)/dnorm(x,1,sigma3),type = 'l',ylab  = "Ratio")
+abline(h=1/2,col='blue',lty=2)
+```
+```{r}
+#value at 3.9
+dnorm(3.9,0,sigma3)/dnorm(3.9,1,sigma3)
+```
+
+
+Ratio will be greater than 0.5, when x will be less than 3.9.
+
+
+b.
