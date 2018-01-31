@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library(tm)
+library(wordcloud)
+library(dplyr)
+library(gutenbergr)
+library(tidytext)
+```
+
+```{r}
+#wordcloud 
+wordcloud("Mughal India developed a strong and stable economy, leading to commercial expansion and greater patronage of culture. Akbar himself was a patron of art and culture. He was fond of literature, and created a library of over 24,000 volumes written in Sanskrit, Urdu, Persian, Greek, Latin, Arabic and Kashmiri, staffed by many scholars, translators, artists, calligraphers, scribes, bookbinders and readers. Akbar also established the library of Fatehpur Sikri exclusively for women,[13] and he decreed that schools for the education of both Muslims and Hindus should be established throughout the realm.",random.order = FALSE)
+```
+```{r}
+wordcloud("The Hindu converts to Islam were by far the largest in number, but at the same time the lowest in social position among the Indian Muslims. From the very beginning, i.e., the conquest of Sind in 712 A.D., up to the eighteenth century, the conversion of the Hindus to Islam went on, not in hundreds but in thousands, specially in the punjab and Bengal. The main instruments of this conversion on a massive scale were")
+```
+```{r}
+wordcloud("Bairam Khan was a Shia Muslim and was disliked by the Sunni Turkic nobles.[15] Although a Shia, he attended Friday services in the mosque of a noted Sufi and was also responsible for Shah Gada, the son of Sikandar Lodi's court poet Jamali Kanboh, becoming sadr-as-sudr in the Mughal Empire after Humayun's return to Delhi in 1555.")
+```
+
